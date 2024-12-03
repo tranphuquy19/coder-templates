@@ -6,7 +6,7 @@ export USER=coder
 
 # Install required packages
 sudo apt-get update
-sudo apt-get install -y bc curl wget git apt-transport-https ca-certificates gnupg lsb-release software-properties-common bash-completion
+sudo apt-get install -y bc curl wget git apt-transport-https ca-certificates gnupg lsb-release software-properties-common bash-completion dnsutils telnet iputils-ping
 
 # Install Terraform
 wget -O- https://apt.releases.hashicorp.com/gpg | sudo gpg --dearmor -o /usr/share/keyrings/hashicorp-archive-keyring.gpg
