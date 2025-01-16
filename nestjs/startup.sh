@@ -89,10 +89,10 @@ cat > ~/.config/syncthing/config.xml <<EOF
         <address>0.0.0.0:${SYNCTHING_UI_PORT}</address>
     </gui>
     <options>
-        <listenAddress>0.0.0.0:${SYNCTHING_LISTEN_PORT}</listenAddress>
-        <globalAnnounceEnabled>false</globalAnnounceEnabled>
-        <localAnnounceEnabled>false</localAnnounceEnabled>
-        <relaysEnabled>false</relaysEnabled>
+        <listenAddress>default</listenAddress>
+        <globalAnnounceEnabled>true</globalAnnounceEnabled>
+        <localAnnounceEnabled>true</localAnnounceEnabled>
+        <relaysEnabled>true</relaysEnabled>
     </options>
 </configuration>
 EOF
