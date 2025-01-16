@@ -46,7 +46,7 @@ locals {
   home_dir      = "/home/coder"
   username      = "coder"
   image         = "codercom/enterprise-base:ubuntu"
-  memory        = 8192
+  memory        = 12288
   cpu_shares    = 4096
   ports = concat(
     [
