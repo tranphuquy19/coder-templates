@@ -46,7 +46,7 @@ locals {
   home_dir      = "/home/coder"
   username      = "coder"
   image         = "codercom/enterprise-base:ubuntu"
-  memory        = 12288
+  memory        = 25795
   cpu_shares    = 4096
   ports = concat(
     [
@@ -155,9 +155,10 @@ resource "docker_container" "workspace" {
     ip   = "host-gateway"
   }
 
-  memory     = local.memory
-  cpu_shares = local.cpu_shares
-  init       = true
+  memory      = local.memory
+  memory_swap = local.memory * 2
+  cpu_shares  = local.cpu_shares
+  init        = true
 }
 
 # Applications
